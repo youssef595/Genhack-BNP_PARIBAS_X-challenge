@@ -20,3 +20,9 @@ Along with the simulated data in a .csv file of syntax ``guild-name-first_submis
 - The python code of the inference
     - ``.py`` file
     - ``requirements.txt`` (all dependencies)
+
+
+## Resources
+
+- [To create GAN using PyTorch](https://realpython.com/generative-adversarial-networks/)
+- [To create GAN using TensorFlow](https://www.codemotion.com/magazine/dev-hub/machine-learning-dev/how-to-build-a-gan-in-python/)
