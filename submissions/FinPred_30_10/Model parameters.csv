@@ -1,0 +1,2 @@
+Number of batches,Iterations,Number of layers of LSTM,Number of layers of AutoEncoder
+25,2300,3,3
