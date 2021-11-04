@@ -26,3 +26,5 @@ Along with the simulated data in a .csv file of syntax ``guild-name-first_submis
 
 - [To create GAN using PyTorch](https://realpython.com/generative-adversarial-networks/)
 - [To create GAN using TensorFlow](https://www.codemotion.com/magazine/dev-hub/machine-learning-dev/how-to-build-a-gan-in-python/)
+- [Basics of GAN bu google](https://developers.google.com/machine-learning/gan/gan_structure)
+- [Neural networks architecture](https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/)
