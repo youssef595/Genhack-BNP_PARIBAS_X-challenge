@@ -79,6 +79,12 @@ if __name__ == "__main__":
     n, d = real_data.shape
 
     # gen data
-    generated_data = np.random.rand(n, d)
+    generated_data = pd.read_csv(
+        "Data/generated_sigmoid.csv",
+        # name of cols
+        header=None,
+    )
 
-    print(Anderson_Darling(generated_data, real_data.values))
+    # print(real_data.values[:-2, :2].shape)
+
+    print(Anderson_Darling(generated_data.values, real_data.values[:-2, :2]))
