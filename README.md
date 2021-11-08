@@ -13,16 +13,22 @@ In general,
 
 The zipped folder should include,
 
-Along with the simulated data in a .csv file of syntax ``guild-name-first_submission.csv``, you will also submit:
+Along with the simulated data in a .csv file of syntax ``<guild-name>number_submission.csv``, you will also submit:
 
-- Simulated data as .csv
-- The noise values with which you simulated the data (.csv also);
+- Simulated data ``generated_samples.csv``
+- The noise values with which you simulated the data ``noise.csv``
 - The python code of the inference
-    - ``.py`` file
+    - ``main.py`` file
     - ``requirements.txt`` (all dependencies)
+- paramaters of the model
 
 
 ## Resources
+
+- [Different methods to generate data](https://analyticsindiamag.com/7-types-of-generative-models-for-your-next-machine-learning-project/)
+
+
+Useful links for GAN
 
 - [To create GAN using PyTorch](https://realpython.com/generative-adversarial-networks/)
 - [To create GAN using TensorFlow](https://www.codemotion.com/magazine/dev-hub/machine-learning-dev/how-to-build-a-gan-in-python/)
