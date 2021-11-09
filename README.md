@@ -35,3 +35,4 @@ Useful links for GAN
 - [Basics of GAN bu google](https://developers.google.com/machine-learning/gan/gan_structure)
 - [Neural networks architecture](https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/)
 - [Generative models in Finance](https://towardsdatascience.com/synthesis-of-tabular-financial-data-using-generative-algorithms-e90415f889ba)
+- [From GAN to WGAN](https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html)
