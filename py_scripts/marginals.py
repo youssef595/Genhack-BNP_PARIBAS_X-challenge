@@ -31,13 +31,12 @@ def W(X, X_real):
     # compute sum
     for i in range(1, n + 1):
         log_u_i = np.log(u(X, X_real, i - 1))
-        log_u_n = np.log(u(X, X_real, n - i))
+        log_u_n = np.log(1 - u(X, X_real, n - i))
 
         sum_w += (2 * i - 1) * (log_u_i + log_u_n)
 
     # additional op
-    sum_w /= n
-    sum_w -= n
+    sum_w = - n - sum_w / n
 
     return sum_w
 
@@ -53,10 +52,10 @@ def u(X, X_real, i):
 
     # compute sum
     for j in range(n):
-        sum_u += (X_real[j] <= X_order[i]) + 1
+        sum_u += (X_real[j] <= X_order[i])
 
     # additional op
-    sum_u /= n + 2
+    sum_u = (sum_u + 1) / (n + 2)
 
     return sum_u
 
@@ -68,7 +67,7 @@ if __name__ == "__main__":
     # load data
     real_data = pd.read_csv(
         # path to data
-        "Data/train.csv",
+        "Data/validation_samples.csv",
         # use 1st col as index
         index_col=0,
         # name of cols
@@ -80,11 +79,11 @@ if __name__ == "__main__":
 
     # gen data
     generated_data = pd.read_csv(
-        "Data/generated_sigmoid.csv",
+        "Data/generated_samples_Fin.csv",
         # name of cols
         header=None,
     )
 
-    # print(real_data.values[:-2, :2].shape)
-
-    print(Anderson_Darling(generated_data.values, real_data.values[:-2, :2]))
+    # print(Anderson_Darling(generated_data.values, real_data.values[:-2, :2]))
+    print(Anderson_Darling(
+        generated_data.values, real_data.values))
