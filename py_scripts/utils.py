@@ -2,6 +2,8 @@
 import numpy as np
 import torch
 
+import pickle
+
 
 # constants
 NB_OBSERVATION = 410
@@ -24,3 +26,15 @@ def gen_noise(nb_rows: int = 410, nb_cols: int = NB_TIKERS):
 
     normal_samples = np.random.normal(size=(nb_rows, nb_cols))
     return torch.Tensor(normal_samples)
+
+
+# save dictionary
+def save_dict(obj, path_without_ext):
+    with open(f"{path_without_ext}.pkl", 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
+
+# load dictionnary
+def load_dict(path_without_ext):
+    with open(f"{path_without_ext}.pkl", 'rb') as f:
+        return pickle.load(f)
