@@ -1,4 +1,7 @@
 # Genhack_competition
+## Introduction 
+
+Stress tests have become a main guideline for the regulator in order to assess the banking system resilience against the realizations of various categories of risk (market, credit, operational, climate, etc). The main challenge is to simulate unfavorable extreme (but plausible) negative returns similar to a historical dataset.
 
 ## Submission
 
